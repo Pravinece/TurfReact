@@ -3,14 +3,14 @@ import Authentication from './components/authentication';
 import LandingPage from './components/landingPage';
 import Choice from './components/home';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import SignInComponent from './components/signin';
 import SignUpComponent from './components/signup';
 function App() {
   return (
     <div className="App">
       {/* <Authentication/> */}
-      <Router>
+      <BrowserRouter>
         <Routes>
         <Route path="/ReactProject" element={<Authentication />} />
         <Route path="/" element={<Authentication />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/home" element={<Choice />} />
 
         </Routes>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
