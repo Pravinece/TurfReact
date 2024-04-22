@@ -12,6 +12,8 @@ function App() {
       {/* <Authentication/> */}
       <Router>
         <Routes>
+        <Route path="/ReactProject" element={<Authentication />} />
+        <Route path="/" element={<Authentication />} />
           <Route path="/ReactLogin" element={<Authentication />} />
           {/* <Route path="/landingPage" element={<LandingPage />} /> */}
           <Route path="/home" element={<Choice />} />
